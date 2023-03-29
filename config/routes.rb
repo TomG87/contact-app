@@ -4,10 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-get "/contact" => "contacts#contact_1"
-  # get "/number_guess", controller: "examples", action: "guess"
-  # get "/test" => "examples#test" 
-  # get "/test2" => "examples#apple"
-  # get "/test3" => "examples#baseball"
+get "/contact" => "contacts#contact"
+get "/all" => "contacts#all"
+get "/number_guess", controller: "examples", action: "guess"
+get "/test" => "examples#test" 
+get "/test2" => "examples#apple"
+get "/test3" => "examples#baseball"
 end
 
